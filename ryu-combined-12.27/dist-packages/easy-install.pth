@@ -1,0 +1,6 @@
+import sys; sys.__plen = len(sys.path)
+./mininet-2.2.1-py2.7.egg
+/usr/lib/python2.7/dist-packages
+./IPy-0.83-py2.7.egg
+./tinyrpc-0.5-py2.7.egg
+import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
